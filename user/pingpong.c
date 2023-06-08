@@ -5,7 +5,6 @@ int main(int argc, char **argv) {
   int p2c_fds[2];
   int c2p_fds[2];
 
-  fprintf(1, "start pingpong\n");
   pipe(p2c_fds);
   pipe(c2p_fds);
   char buf[10] = {0};
